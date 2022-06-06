@@ -1,3 +1,19 @@
+# The OGF version of Overpass-Turbo
+
+This is the opengeofiction fork of the [overpass-turbo](https://github.com/tyrasd/overpass-turbo) application.
+It is used by the [opengeofiction.net website](https://opengeofiction.net/about), which uses the OSM software "stack" 
+to implement a website where people can draw imaginary digital maps on a shared, imaginary world.
+
+The customization of the the various components of the OSM software stack is currently quite ad hoc and quite
+specific to the opengeofiction application, but our long term intention is to develop this fork to better enable
+anyone interested in using the OSM stack for geofiction to set up their own server.
+
+Contact information for the team of volunteers who host and run the opengeofiction website is found [here](https://opengeofiction.net/contact).
+
+Installation of the turbo application can be done following the steps referenced below. A geofiction-specific INSTALL will eventually 
+be written, including instruction for how to set up all the customized elements of the OSM stack.
+
+# Everything below this line is the README.md inherited from overpass-turbo by tyrasd:
 # overpass turbo
 
 - https://overpass-turbo.eu/ – stable version
