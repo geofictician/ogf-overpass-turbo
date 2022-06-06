@@ -143,7 +143,7 @@ $(document).ready(function () {
   ide.map = new L.Map("map");
   var tilesUrl = settings.tileServer;
   var tilesAttrib =
-    'Tiles and data courtesy <a href="https://opengeofiction.net/about">OpenGeofiction</a> and contributors.';
+    '&copy; <a href="www.openstreetmap.org/copyright">OpenStreetMap</a> contributors&ensp;<small>Data:ODbL, Map:cc-by-sa</small>';
   var tiles = new L.TileLayer(tilesUrl, {attribution: tilesAttrib});
   ide.map.setView([0, 0], 1).addLayer(tiles);
   var scaleControl = new L.Control.Scale({metric: true, imperial: false});

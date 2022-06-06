@@ -11,7 +11,7 @@ export default function () {
   function request(search, callback) {
     // ajax (GET) request to nominatim
     $.ajax(
-      "https://nominatim.opengeofiction.net/search" +
+      "https://nominatim.openstreetmap.org/search" +
         "?X-Requested-With=" +
         configs.appname,
       {
@@ -32,7 +32,7 @@ export default function () {
         },
         error: function () {
           var err =
-            "An error occurred while contacting the osm search server nominatim.opengeofiction.net :(";
+            "An error occurred while contacting the osm search server nominatim.openstreetmap.org :(";
           console.log(err);
           callback(err, null);
         }
