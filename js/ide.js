@@ -1746,7 +1746,7 @@ var ide = new (function () {
             "<h4>" +
             i18n.t("export.map_view.permalink") +
             "</h4>" +
-            '<p><a href="//www.openstreetmap.org/#map=' +
+            '<p><a href="//opengeofiction.net/#map=' +
             ide.map.getZoom() +
             "/" +
             L.Util.formatNum(ide.map.getCenter().lat) +
