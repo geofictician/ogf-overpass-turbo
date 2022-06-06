@@ -258,7 +258,10 @@ var overpass = new (function () {
               //geojson = overpass.overpassJSON2geoJSON(data);
             }
 
-            //fire("onProgress", "applying styles"); // doesn't correspond to what's really going on. (the whole code could in principle be put further up and called "preparing mapcss styles" or something, but it's probably not worth the effort)
+            //fire("onProgress", "applying styles");
+            //   doesn't correspond to what's really going on. (the whole code could in
+            //   principle be put further up and called "preparing mapcss styles" or
+            //   something, but it's probably not worth the effort)
 
             // show rerender button, if query contains mapcss styles
             if (user_mapcss) $("#rerender-button").show();
@@ -646,21 +649,21 @@ var overpass = new (function () {
                       var popup = "";
                       if (feature.properties.type == "node")
                         popup +=
-                          "<h4 class='title is-4'>Node <a href='//www.openstreetmap.org/node/" +
+                          "<h4 class='title is-4'>Node <a href='//opengeofiction.net/node/" +
                           feature.properties.id +
                           "' target='_blank'>" +
                           feature.properties.id +
                           "</a></h4>";
                       else if (feature.properties.type == "way")
                         popup +=
-                          "<h4 class='title is-4'>Way <a href='//www.openstreetmap.org/way/" +
+                          "<h4 class='title is-4'>Way <a href='//opengeofiction.net/way/" +
                           feature.properties.id +
                           "' target='_blank'>" +
                           feature.properties.id +
                           "</a></h4>";
                       else if (feature.properties.type == "relation")
                         popup +=
-                          "<h4 class='title is-4'>Relation <a href='//www.openstreetmap.org/relation/" +
+                          "<h4 class='title is-4'>Relation <a href='//opengeofiction.net/relation/" +
                           feature.properties.id +
                           "' target='_blank'>" +
                           feature.properties.id +
@@ -727,7 +730,7 @@ var overpass = new (function () {
                             v =
                               '<a href="//' +
                               wiki_lang[1] +
-                              ".wikipedia.org/wiki/" +
+                              ".wiki.opengeofiction.net/wiki/" +
                               wiki_page +
                               '" target="_blank">' +
                               v +
@@ -736,7 +739,7 @@ var overpass = new (function () {
                           if (k.match(/(^|:)wikidata$/))
                             v = v.replace(/Q[0-9]+/g, function (q) {
                               return (
-                                '<a href="//www.wikidata.org/wiki/' +
+                                '<a href="//wikidata.opengeofiction.net/wiki/' +
                                 q +
                                 '" target="_blank">' +
                                 q +
@@ -798,7 +801,7 @@ var overpass = new (function () {
                         popup += "</h3><ul>";
                         $.each(feature.properties.relations, function (k, v) {
                           popup +=
-                            "<li><a href='//www.openstreetmap.org/relation/" +
+                            "<li><a href='//opengeofiction.net/relation/" +
                             v["rel"] +
                             "' target='_blank'>" +
                             v["rel"] +
@@ -839,14 +842,14 @@ var overpass = new (function () {
                           v = htmlentities(v);
                           if (k == "user")
                             v =
-                              '<a href="//www.openstreetmap.org/user/' +
+                              '<a href="//opengeofiction.net/user/' +
                               v +
                               '" target="_blank">' +
                               v +
                               "</a>";
                           if (k == "changeset")
                             v =
-                              '<a href="//www.openstreetmap.org/changeset/' +
+                              '<a href="//opengeofiction.net/changeset/' +
                               v +
                               '" target="_blank">' +
                               v +
