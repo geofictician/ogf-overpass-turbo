@@ -1,28 +1,23 @@
 export default {
-  appname: "overpass-turbo",
-  defaultServer: "//overpass-api.de/api/",
+  appname: "ogf-overpass-turbo",
+  defaultServer: "//overpass.ogf.rent-a-planet.com/api/",
   suggestedServers: [
-    "//overpass-api.de/api/",
-    "https://overpass.kumi.systems/api/",
-    "http://overpass.openstreetmap.ru/cgi/",
-    "//overpass.openstreetmap.fr/api/"
+    "//overpass.ogf.rent-a-planet.com/api/",
+    "//ogfoverpass.rent-a-planet.com/api/"
   ],
-  defaultTiles: "//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  defaultTiles: "//tiles04.rent-a-planet.com/ogf-carto/{z}/{x}/{y}.png",
   tileServerAttribution:
-    "&copy; OpenStreetMap.org contributors&ensp;<small>Data:ODbL, Map:cc-by-sa</small>",
+    "Tiles and data courtesy OpenGeofiction and contributors.",
   suggestedTiles: [
-    "//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    //"http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
-    //"http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png",
-    //"http://{s}.tile3.opencyclemap.org/landscape/{z}/{x}/{y}.png",
-    //"http://otile1.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg",
+    "//tiles04.rent-a-planet.com/ogf-carto/{z}/{x}/{y}.png",
+    "https://tiles04.rent-a-planet.com/ogf-topo/{z}/{x}/{y}.png"
   ],
   defaultMapView: {
-    lat: 41.89,
-    lon: 12.492,
+    lat: 20.727,
+    lon: 86.715,
     zoom: 16
   },
-  maxMapZoom: 20,
+  maxMapZoom: 19,
   short_url_service: "",
   html2canvas_use_proxy: false,
   // api key for osmnames geocoder, go to http://osmnames.org/api/ to get one if you run your own overpass instance
